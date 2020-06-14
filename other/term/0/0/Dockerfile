@@ -1,47 +1,46 @@
 FROM phusion/baseimage:master-amd64
 MAINTAINER skysider <skysider@163.com>
 
-COPY sources.list /etc/apt/sources.list
+COPY files/sources.list /etc/apt/sources.list
 
-RUN apt update
+ENV DEBIAN_FRONTEND noninteractive
 
-RUN dpkg --add-architecture i386 && \
-    apt-get -y update && \
-    apt install -y \
-    libc6:i386 \
-    libc6-dbg:i386 \
-    libc6-dbg \
-    lib32stdc++6 \
-    g++-multilib \
-    cmake \
-    ipython3 \
-    vim \
-    net-tools \
-    iputils-ping \
-    libffi-dev \
-    libssl-dev \
-    python3-dev \
-    python3-pip \
-    build-essential \
-    ruby \
-    ruby-dev \
-    tmux \
-    strace \
-    ltrace \
-    nasm \
-    wget \
-    radare2 \
-    gdb \
-    gdb-multiarch \
-    netcat \
-    socat \
-    git \
-    patchelf \
-    gawk \
-    file \
-    python3-distutils \
-    bison --fix-missing && \
-    rm -rf /var/lib/apt/list/*
+RUN dpkg --add-architecture i386
+RUN apt-get -y update
+RUN apt install -y libc6:i386
+RUN apt install -y libc6-dbg:i386
+RUN apt install -y libc6-dbg
+RUN apt install -y lib32stdc++6
+RUN apt install -y g++-multilib
+RUN apt install -y cmake
+RUN apt install -y ipython3
+RUN apt install -y vim
+RUN apt install -y net-tools
+RUN apt install -y iputils-ping
+RUN apt install -y libffi-dev
+RUN apt install -y libssl-dev
+RUN apt install -y python3-dev
+RUN apt install -y python3-pip
+RUN apt install -y build-essential
+RUN apt install -y ruby
+RUN apt install -y ruby-dev
+RUN apt install -y tmux
+RUN apt install -y strace
+RUN apt install -y ltrace
+RUN apt install -y nasm
+RUN apt install -y wget
+RUN apt install -y radare2
+RUN apt install -y gdb
+RUN apt install -y gdb-multiarch
+RUN apt install -y netcat
+RUN apt install -y socat
+RUN apt install -y git
+RUN apt install -y patchelf
+RUN apt install -y gawk
+RUN apt install -y file
+RUN apt install -y python3-distutils
+RUN apt install -y bison --fix-missing
+RUN apt install -y rm -rf /var/lib/apt/list/*
 
 RUN python3 -m pip install -U pip && \
     python3 -m pip install --no-cache-dir \
@@ -87,7 +86,8 @@ COPY --from=skysider/glibc_builder32:2.28 /glibc/2.28/32 /glibc/2.28/32
 COPY --from=skysider/glibc_builder64:2.29 /glibc/2.29/64 /glibc/2.29/64
 COPY --from=skysider/glibc_builder32:2.29 /glibc/2.29/32 /glibc/2.29/32
 
-COPY linux_server linux_server64  /ctf/
+COPY files/linux_server /ctf/
+COPY files/linux_server64 /ctf/
 
 RUN chmod a+x /ctf/linux_server /ctf/linux_server64
 
