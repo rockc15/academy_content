@@ -1,20 +1,20 @@
-  {"OpenTerminal" : {
+{"OpenTerminal" : {
+  "0" : {
     "0" : {
-      "0" : {
-        "quote" : "\"There is no heavier burden than an unfulfilled potential.\"",
-        "quoteAuthor" : "-Charles Schulz",
-        "sections" : [ {
-          "check" : "N/A",
-          "cmd" : "N/A",
-          "content" : "<textarea style=\"resize:vertical;\" placeholder=...",
-          "name" : "Enjoy this free terminal",
-          "type" : "info"
-        } ],
-        "title" : "Terminal"
+      "quote" : "\"There is no heavier burden than an unfulfilled potential.\"",
+      "quoteAuthor" : "-Charles Schulz",
+      "sections" : [ {
+        "check" : "N/A",
+        "cmd" : "N/A",
+        "content" : "<textarea style=\"resize:vertical;\" placeholder=...",
+        "name" : "Enjoy this free terminal",
+        "type" : "info"
+      } ],
+      "title" : "Terminal"
       },
-      "shortDesc" : "It's an open terminal"
-    },
-    "longDesc" : "A longer description of an open terminal",
     "shortDesc" : "It's an open terminal"
+  },
+  "longDesc" : "A longer description of an open terminal",
+  "shortDesc" : "It's an open terminal"
   }
 }

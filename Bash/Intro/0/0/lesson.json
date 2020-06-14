@@ -1,0 +1,20 @@
+{"intro" : {
+  "0" : {
+    "0" : {
+      "quote" : "\"You are braver than you believe, and stronger than you seem, and smarter than you think. \"",
+      "quoteAuthor" : "Christopher Robin",
+      "sections" : [ {
+        "check" : "N/A",
+        "cmd" : "N/A",
+        "content" : "<textarea style=\"resize:vertical;\" placeholder=...",
+        "name" : "Learn How to Use Bash",
+        "type" : "info"
+      } ],
+      "title" : "Intro To Bash"
+      },
+    "shortDesc" : "Introduction to the Bash Shell",
+  },
+  "longDesc" : "Introduction to the Bash Shell",
+  "shortDesc" : "Introduction to the Bash Shell"
+  }
+}
