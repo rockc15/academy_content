@@ -7,14 +7,111 @@
         "check" : "N/A",
         "cmd" : "N/A",
         "content" : "<textarea style=\"resize:vertical;\" placeholder=...",
-        "name" : "Learn How to Use Bash",
+        "name" : "Learning the Land",
         "type" : "info"
-      } ],
+      },
+      {
+        "check" : "N/A",
+        "cmd" : "N/A",
+        "content" : "<textarea style=\"resize:vertical;\" placeholder=...",
+        "name" : "This lesson is the first of many to becoming a pro at bossing your computer around. In this lesson you will learn how to move around a bash shell. Trust me we get it working in a shell is intimadating at first but it is really useful to know.",
+        "type" : "info"
+      },
+      {"check": "pwd" ,
+       "cmd": "N/A" , 
+       "content": "N/A" ,
+       "name": "Use `whoami` to see what user you are" , 
+       "type": "inputcheck" 
+      },
+      {"check": "whoami" ,
+      "cmd": "N/A" , 
+      "content": "N/A" ,
+      "name": "Use `pwd` and note what dir you are in" , 
+      "type": "inputcheck" 
+      },
+      {"check": "cd" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "lets find the home dir use `cd` to change to the home dir" , 
+        "type": "inputcheck" 
+      },
+      {"check": "pwd" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "Use `pwd` again to see if you are in the home dir" , 
+        "type": "inputcheck" 
+      },
+      {"check": "ls" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "Use ls to see what is in that dir" , 
+        "type": "inputcheck" 
+      },
+      {"check": "N/A" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "You should see a combination of dir and files if not don't worry we can take care of that shortly" , 
+        "type": "info" 
+      },
+      {"check": "mkdir bash" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "Use `mkdir bash` to created a new dir named bash" , 
+        "type": "inputcheck" 
+      },
+      {"check": "cd bash" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "Now we want to change our current working dir to bash try `cd bash` to chage" ,
+        "type": "inputcheck" 
+      },
+      {"check": "N/A" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "You can replace the bash dir with any dir when using the cd command" , 
+        "type": "info" 
+      },
+      {"check": "pwd" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "Use `pwd` again to see if you are in the bash dir" , 
+        "type": "inputcheck" 
+      },
+      {"check": "N/A" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "Notice how there is a more dir attached to bash. Something like /Users/casey/bash this is known as you absolute path. /User is the parent dir of /casey which is the parent dir of /bash" , 
+        "type": "info" 
+      },
+      {"check": "pwd" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "Again use `pwd` (last time i promise) to verify you are back to the parent dir" , 
+        "type": "inputcheck" 
+      },
+      {"check": "N/A" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "Now that you know how to move around lets go back into the bash dir" , 
+        "type": "info" 
+      },
+      {"check": "touch newFile" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "Lets try making a new file type `touch newFile` to make a file called newFile" , 
+        "type": "inputcheck" 
+      },
+      {"check": "ls" ,
+        "cmd": "N/A" , 
+        "content": "N/A" ,
+        "name": "Use `ls` to see if the new files was created" , 
+        "type": "inputcheck" 
+      }],
       "title" : "Intro To Bash"
       },
     "shortDesc" : "Introduction to the Bash Shell"
   },
-  "longDesc" : "Introduction to the Bash Shell",
+  "longDesc" : "This lesson is the first of many to becoming a pro at bossing your computer around. In this lesson you will learn how to move around a bash shell. Trust me we get it working in a shell is intimadating at first but it is really useful to know.",
   "shortDesc" : "Introduction to the Bash Shell"
   }
 }
